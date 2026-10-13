@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Clean receipt",
+    "input": "Paid ₹ 1,250 to AWS India Pvt Ltd on 12 March 2024. Invoice #INV-2024-0312. Services: cloud compute.",
+    "response": {
+      "review_required": false,
+      "fields": {
+        "vendor_name": {"value": "AWS India Pvt Ltd", "confidence": 0.99, "needs_review": false},
+        "amount": {"value": 1250, "confidence": 0.99, "needs_review": false},
+        "currency": {"value": "INR", "confidence": 0.99, "needs_review": false},
+        "date": {"value": "2024-03-12", "confidence": 0.99, "needs_review": false},
+        "category": {"value": "software", "confidence": 0.80, "needs_review": false},
+        "description": {"value": "Cloud compute services", "confidence": 0.94, "needs_review": false},
+        "invoice_id": {"value": "INV-2024-0312", "confidence": 0.99, "needs_review": false}
+      }
+    }
+  },
+  {
+    "label": "Vendor email",
+    "input": "Hi team, please find attached the invoice from Zoho Corp for ₹ 4,800 (software subscription, April 2024). Reference: ZHO-88821.",
+    "response": {
+      "review_required": true,
+      "fields": {
+        "vendor_name": {"value": "Zoho Corp", "confidence": 0.98, "needs_review": false},
+        "amount": {"value": 4800, "confidence": 0.98, "needs_review": false},
+        "currency": {"value": "INR", "confidence": 0.97, "needs_review": false},
+        "date": {"value": null, "confidence": 0.20, "needs_review": true},
+        "category": {"value": "software", "confidence": 0.98, "needs_review": false},
+        "description": {"value": "Software subscription for April 2024", "confidence": 0.91, "needs_review": false},
+        "invoice_id": {"value": "ZHO-88821", "confidence": 0.93, "needs_review": false}
+      }
+    }
+  },
+  {
+    "label": "Slack message",
+    "input": "hey can someone reimburse me for the uber last tuesday? it was like 340 rupees, went to the airport for the client meeting",
+    "response": {
+      "review_required": true,
+      "fields": {
+        "vendor_name": {"value": "Uber", "confidence": 0.91, "needs_review": false},
+        "amount": {"value": 340, "confidence": 0.78, "needs_review": false},
+        "currency": {"value": "INR", "confidence": 0.94, "needs_review": false},
+        "date": {"value": null, "confidence": 0.15, "needs_review": true},
+        "category": {"value": "travel", "confidence": 0.97, "needs_review": false},
+        "description": {"value": "Uber trip to the airport for a client meeting", "confidence": 0.94, "needs_review": false},
+        "invoice_id": {"value": null, "confidence": 0.05, "needs_review": true}
+      }
+    }
+  },
+  {
+    "label": "Scanned receipt",
+    "input": "DELHI METRO RAIL CORP Token: 0042 Fare: INR 30 Date: 29-04-2024 From: Rajiv Chowk To: Hauz Khas",
+    "response": {
+      "review_required": true,
+      "fields": {
+        "vendor_name": {"value": "DELHI METRO RAIL CORP", "confidence": 0.97, "needs_review": false},
+        "amount": {"value": 30, "confidence": 0.94, "needs_review": false},
+        "currency": {"value": "INR", "confidence": 0.99, "needs_review": false},
+        "date": {"value": "2024-04-29", "confidence": 0.98, "needs_review": false},
+        "category": {"value": "travel", "confidence": 0.97, "needs_review": false},
+        "description": {"value": "Delhi Metro fare from Rajiv Chowk to Hauz Khas", "confidence": 0.91, "needs_review": false},
+        "invoice_id": {"value": null, "confidence": 0.15, "needs_review": true}
+      }
+    }
+  },
+  {
+    "label": "Ambiguous/garbage",
+    "input": "meeting notes: discussed q2 targets, revenue up 12%, john to follow up with vendors next week",
+    "response": {
+      "review_required": true,
+      "fields": {
+        "vendor_name": {"value": null, "confidence": 0.05, "needs_review": true},
+        "amount": {"value": null, "confidence": 0.05, "needs_review": true},
+        "currency": {"value": null, "confidence": 0.05, "needs_review": true},
+        "date": {"value": null, "confidence": 0.05, "needs_review": true},
+        "category": {"value": null, "confidence": 0.05, "needs_review": true},
+        "description": {"value": null, "confidence": 0.05, "needs_review": true},
+        "invoice_id": {"value": null, "confidence": 0.05, "needs_review": true}
+      }
+    }
+  }
+]

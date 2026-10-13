@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Clean receipt",
+    "text": "Paid ₹ 1,250 to AWS India Pvt Ltd on 12 March 2024. Invoice #INV-2024-0312. Services: cloud compute."
+  },
+  {
+    "label": "Vendor email",
+    "text": "Hi team, please find attached the invoice from Zoho Corp for ₹ 4,800 (software subscription, April 2024). Reference: ZHO-88821."
+  },
+  {
+    "label": "Slack message",
+    "text": "hey can someone reimburse me for the uber last tuesday? it was like 340 rupees, went to the airport for the client meeting"
+  },
+  {
+    "label": "Scanned receipt",
+    "text": "DELHI METRO RAIL CORP Token: 0042 Fare: INR 30 Date: 29-04-2024 From: Rajiv Chowk To: Hauz Khas"
+  },
+  {
+    "label": "Ambiguous/garbage",
+    "text": "meeting notes: discussed q2 targets, revenue up 12%, john to follow up with vendors next week"
+  }
+]
